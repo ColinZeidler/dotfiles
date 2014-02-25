@@ -1,0 +1,8 @@
+#! /bin/bash
+Files=(".vimrc" ".bashrc" ".bash_aliases")
+
+for file in ${array[*]}
+do
+    echo "moving $file"
+    cp "$file ~/$file"
+done
