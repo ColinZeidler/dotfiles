@@ -1,4 +1,3 @@
-#! /bin/bash
 #aliases file for custom bash commands
 
 bye() {
