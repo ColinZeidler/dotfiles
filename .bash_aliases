@@ -1,3 +1,6 @@
+#! /bin/bash
+#aliases file for custom bash commands
+
 bye() {
     sudo shutdown 0 -P 
 }
