@@ -48,7 +48,13 @@ set incsearch		" Incremental search
 "set hidden             " Hide buffers when they are abandoned
 set mouse=a		" Enable mouse usage (all modes)
 
-"set expandtab
+let _curfile = expand("%:t")
+if _curfile =~ "Makefile" || _curfile =~ "makefile"
+  set noexpandtab
+else
+  set expandtab
+endif
+
 set shiftwidth=4
 set tabstop=4
 
